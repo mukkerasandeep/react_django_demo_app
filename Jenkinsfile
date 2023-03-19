@@ -14,14 +14,14 @@ pipeline {
         stage ('Deploy') {  
             steps {
                 script  {
-                    sh "echo "12345" | sudo -S docker build  -t react_django_demo_app ."
+                    sh " sudo -S docker build  -t react_django_demo_app ."
 		}
             }
         }
         stage ('Run'){ 
             steps {
                 script {
-                    sh "echo "12345" | sudo -S docker  run -p 8001:8001 -d react_django_demo_app"
+                    sh "sudo -S docker  run -p 8001:8001 -d react_django_demo_app"
                 }
             }
         }
