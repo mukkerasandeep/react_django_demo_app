@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage{
             steps{
-               git branch: 'main', url: 'https://github.com/chxtan/react_django_demo_app.git'
+               git branch: 'main', url: 'https://github.com/mukkerasandeep/react_django_demo_app.git'
             }
         }
         stage{
