@@ -14,7 +14,7 @@ pipeline {
         stage ('Deploy') {  
             steps {
                 script  {
-                    sh "sudo docker build --no-cache -t react_django_demo_app ."
+                    sh "sudo docker build  -t react_django_demo_app ."
 				}
             }
         }
